@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA-js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div class="formulario">
+            <h1>
+                AGENDA UNIVERSITARIA
+            </h1>
+            <form>
+                <label for="nombre" >Nombres</label>
+                <input type="text" id="nombre" name="nombre">
+                <br>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido">
+                <br>
+                <br>
+                <label for="telefono">Numero De Telefono</label>
+                <input type="tel" id="telefono" name="telefono">
+                <br>
+                <br>
+                <label for="emal">Correo Electronico</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion" name="direccion">
+                <br>
+                <br>
+                <label for="fecha">Fecha De Nacimieno</label>
+                <input type="date" id="fecha" name="fecha">
+                <br>
+                <br>
+                <label for="nota">Anotacion</label> 
+                <input type="text" id="nota" name="nota">
+                <br>
+                <br>
+                <input type="button" value="Agregar" id="guardar">
+                <br>
+            </form>
+        </div>
+    </div>
+    <p>
+    <div>
+        <div class="tabla">
+            <table id="tabla">
+                <thead>
+                    <th> Nombre </th>
+                    <th> Apellido </th>
+                    <th> Numero De Telefono </th>
+                    <th> Correo Electronico </th>
+                    <th> Direccion </th>
+                    <th> Fecha De Nacimiento </th>
+                    <th> Anotacion </th>
+                    <th> Accion </th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>carlos</td>
+                        <td>quiroz</td>
+                        <td>30145356327</td>
+                        <td>elmoi@jdsjfks</td>
+                        <td>fsdfsf</td>
+                        <td>un dia cualquiera</td>
+                        <td>ola bb</td>
+                        <td><button class="btn-danger" onclick="eliminarFila(this)">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
